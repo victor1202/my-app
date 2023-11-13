@@ -1,20 +1,29 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import { View } from 'react-native'
+import Styles from './src/styles/Styles'
+// cria a navegacao em pilha
+const Stack = createNativeStackNavigator()
+
+// importa as views
+import Home from './src/views/Home'
+import Login from './src/views/Login'
+import Paradas from './src/views/Paradas'
+import Maps from './src/views/Maps'
+import Details from './src/views/Details'
+import Messejana from './src/views/Messejana'
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name='Login' component={Login} options={{ headerShown: false }} />
+        <Stack.Screen name='Home' component={Home} />
+        <Stack.Screen name='Paradas' component={Paradas} />
+        <Stack.Screen name='Maps' component={Maps} />
+        <Stack.Screen name='Details' component={Details} />
+        <Stack.Screen name='Messejana' component={Messejana} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
