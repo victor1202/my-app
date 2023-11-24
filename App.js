@@ -1,7 +1,5 @@
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import { View } from 'react-native'
-import Styles from './src/styles/Styles'
 // cria a navegacao em pilha
 const Stack = createNativeStackNavigator()
 

@@ -29,8 +29,8 @@ const Styles = StyleSheet.create({
   },
   mapContainer: {
     flex: 1,
-    justifyContent:'space-evenly',
-    marginVertical: 200
+    justifyContent:'space-around',
+    marginVertical: 100
   },
   mapview: {
     width: width,
@@ -40,8 +40,7 @@ const Styles = StyleSheet.create({
     backgroundColor: '#134bcb',
     flexDirection: 'column',
     justifyContent: 'center',
-    marginBottom: 10,
-    borderCurve: 8
+    marginBottom: -15,
   },
 })
 
@@ -90,8 +89,8 @@ const Messejana = () => {
           )}
         </MapView>
         <View style={Styles.consoleHome}>
-          <Button></Button>
-          <Button></Button>
+          <Button label="Parada1 - Parada2 - Parada3"></Button>
+ 
         </View>
       </View>
     </View >

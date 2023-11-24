@@ -8,7 +8,7 @@ import { StyleSheet } from 'react-native'
 
 const Styles = StyleSheet.create({
     containerLogin: {
-      backgroundColor: '#43b3a4',
+      backgroundColor: '#134bcb',
       flex: 1,
       justifyContent: 'center',
       padding: 8,
@@ -63,7 +63,7 @@ const Styles = StyleSheet.create({
       backgroundColor: '#134bcb',
       flexDirection: 'row',
       gap: 16,
-      justifyContent: 'center'
+      justifyContent: 'space-around',
     },
   })
 export default Styles
